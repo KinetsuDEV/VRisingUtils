@@ -9,6 +9,6 @@ namespace VRisingUtils.Extensions
             WetstoneUtils.GameDataSystem.ManagedDataRegistry.GetOrDefault<ManagedItemData>(itemData.ItemTypeGUID);
 
         public static string GetName(this ItemData itemData) =>
-            itemData.GetManagedData().Name.IsEmpty ? null : itemData.GetManagedData().Name.ToString();
+            itemData.GetManagedData().Name.IsEmpty ? "ItemHasNoName" : itemData.GetManagedData().Name.ToString();
     }
 }
